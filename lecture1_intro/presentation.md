@@ -44,3 +44,15 @@ forms a bottleneck but this can done in Julia itself.*
 ![window](benchmarks.png)
 
 https://julialang.org/benchmarks/
+
+## Today
+- Install Julia and an editor
+- The package manager Pkg.jl
+- Stdlib
+- Plotting
+- Help
+
+## Next week
+- Types
+- Functions
+- Multiple dispatch

@@ -4,9 +4,9 @@ sum(a)
 mean(a)
 using Statistics, BenchmarkTools
 mean(a)
-@btime mean(a.^2)
-@btime mean(abs2, a)
-@btime mean(x^2 for x in a)
+@btime mean($a.^2)
+@btime mean(abs2, $a)
+@btime mean(x^2 for x in $a)
 
 std(a)
 std(randn(100,100), dims=2)
