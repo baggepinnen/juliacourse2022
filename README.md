@@ -1,7 +1,7 @@
 # juliacourse 2022
 A short course in Julia for scientific programming
 
-This version of the julia course is given for graduate students at Dept. Automatic Control at Lund University, with course webpage: http://www.control.lth.se/education/doctorate-program/julia-course/julia-course-2022/
+This version of the julia course is given for graduate students at Dept. Automatic Control at Lund University.
 
 Teachers:
 Fredrik Bagge Carlson ([@baggepinnen](https://github.com/baggepinnen))
