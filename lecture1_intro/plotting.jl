@@ -8,11 +8,12 @@ plot!(randn(10))
 plot(randn(10), layout=(2,2), subplot=1)
 plot!(randn(10), subplot=2, c=:red)
 ##
-# plotly()
-# x = y = range(-3, 3, length = 100)
-# f(x, y) = sinc(norm([x, y]))
-# surface!(x, y, f, subplot=3)
-# contour!(x, y, f, subplot=4)
+# plotly() # for interactivity
+using LinearAlgebra
+x = y = range(-3, 3, length = 100)
+f(x, y) = sinc(norm([x, y]))
+surface!(x, y, f, subplot=3)
+contour!(x, y, f, subplot=4)
 
 ##
 using ControlSystems, Interact
