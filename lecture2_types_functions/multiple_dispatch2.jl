@@ -55,7 +55,7 @@ dump(vs[1])
 
 # So does it work?
 
-innersum(A, vs)
+@btime innersum($A, $vs)
 
 
 # Lets try to be more efficent!
