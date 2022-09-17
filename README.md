@@ -9,6 +9,7 @@ Fredrik Bagge Carlson ([@baggepinnen](https://github.com/baggepinnen))
 ## Upcoming (Lecture 2)
 Session on Tuesday 13/9 10:15-12:00 [Types, functions and dispatch](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture2_types_functions).
 
+*Homework*: see [homework_instructions.jl](https://github.com/baggepinnen/juliacourse2022/blob/main/lecture2_types_functions/homework_instructions.jl).
 
 ## Previously under "upcoming"
 ### Lecture 1
