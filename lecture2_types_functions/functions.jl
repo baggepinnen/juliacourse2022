@@ -130,12 +130,16 @@ a = randn(5) + im*randn(5)
 
 ##
 filter(v -> real(v) > 0, a)
+
+filter(a) do v
+    real(v) > 0
+end
 ##
 
 
 ##
 lt(x,y) = real(x)*imag(x) < real(y)*imag(y)
-b = sort(a, lt=lt)
+b = sort(a; lt)
 real(b) .* imag(b)
 ##
 
@@ -196,6 +200,7 @@ sum(f.(a,a)), 2sum(a)
 
 ##
 fuse1(a,b) = sin.(cos.(2 .*(a .+ b)))
+fuse1(a,b) = @. sin(cos(2 *(a + b)))
 ##
 
 
@@ -220,5 +225,5 @@ end
 
 ##
 fuse2(a,b)
-@btime fuse2($a,$b);
+@btime fuse2($a,$b)
 ##
