@@ -1,5 +1,7 @@
 # Lecture 3 - Performance
 
+[Lecture video](https://youtu.be/iXanjMe8OQk) (unfortunately without screen share).
+
 ## Homework
 
 Monte-Carlo simulation of a bootstrap particle filter
