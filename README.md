@@ -6,13 +6,23 @@ This version of the julia course is given for graduate students at Dept. Automat
 Teachers:
 Fredrik Bagge Carlson ([@baggepinnen](https://github.com/baggepinnen))
 
-## Upcoming (Lecture 3)
-Session on Tuesday 20/9 10:25-12:00 [Performance and profiling](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture3_performance).
-*Homework*: see [test_pf.jl](https://github.com/baggepinnen/juliacourse2022/blob/main/lecture3_performance/test_pf.jl).
+## Upcoming (Lecture 4)
+Session on Tuesday 27/9 10:25-12:00 [Workflow, packages and design](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture4_workflow_design)
+- Creating packages
+- Testing
+- Workflow
+- Patterns and antipatterns
+- System images
 
+*Homework*: Create a package, see instructions in [`presentation.pdf`](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture4_workflow_design/presentation.pdf)
 
 
 ## Previously under "upcoming"
+
+### Lecture 3
+
+Session on Tuesday 20/9 10:25-12:00 [Performance and profiling](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture3_performance).
+*Homework*: see [test_pf.jl](https://github.com/baggepinnen/juliacourse2022/blob/main/lecture3_performance/test_pf.jl).
 
 ### Lecture 2
 Session on Tuesday 13/9 10:15-12:00 [Types, functions and dispatch](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture2_types_functions).
