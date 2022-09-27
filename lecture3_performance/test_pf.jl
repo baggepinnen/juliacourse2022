@@ -124,7 +124,7 @@ using Plots
 function plotting(RMSE)
     time_steps = [20, 200, 2000]
     particle_count = [5, 30, 100, 300, 1000, 10_000]
-    legend_strings = ["$(time_steps[i]) time steps" for i = 1:length(time_steps)]
+    legend_strings = ["$(time_steps[i]) time steps" for i = eachindex(time_steps)]
     legend_strings = reshape(legend_strings,1,:)
     scatter(particle_count,RMSE, title="RMS errors vs Number of particles", xscale=:log10, lab=legend_strings)
 end
