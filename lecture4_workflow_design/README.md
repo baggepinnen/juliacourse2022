@@ -1,5 +1,7 @@
 # Lecture 4 -- Workflow, creating and testing packages and creating system images
 
+## Video
+https://youtu.be/9C_2ZL591Hs
 
 
 ## Homework
