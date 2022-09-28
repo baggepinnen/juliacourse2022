@@ -6,7 +6,12 @@ This version of the julia course is given for graduate students at Dept. Automat
 Teachers:
 Fredrik Bagge Carlson ([@baggepinnen](https://github.com/baggepinnen))
 
-## Upcoming (Lecture 4)
+## Upcoming (Lecture 5)
+Session on Tuesday 4/10 10:15-12:00 Parallel computing (TBA)
+
+## Previously under "upcoming"
+
+## Lecture 4
 Session on Tuesday 27/9 10:25-12:00 [Workflow, packages and design](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture4_workflow_design)
 - Creating packages
 - Testing
@@ -16,8 +21,6 @@ Session on Tuesday 27/9 10:25-12:00 [Workflow, packages and design](https://gith
 
 *Homework*: Create a package, see instructions in [`presentation.pdf`](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture4_workflow_design/presentation.pdf)
 
-
-## Previously under "upcoming"
 
 ### Lecture 3
 
