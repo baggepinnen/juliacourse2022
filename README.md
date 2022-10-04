@@ -7,7 +7,10 @@ Teachers:
 Fredrik Bagge Carlson ([@baggepinnen](https://github.com/baggepinnen))
 
 ## Upcoming (Lecture 5)
-Session on Tuesday 4/10 10:15-12:00 Parallel computing (TBA)
+Session on Tuesday 4/10 10:15-12:00 [Parallel and distributed computing](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture5_distributed)
+
+*Homework*: Run a distributed workload. If you have no suitable workload of your own, run the particle-filtering distributed.
+Try making use of the cloud computers for this homework.
 
 ## Previously under "upcoming"
 
