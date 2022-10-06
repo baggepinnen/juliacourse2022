@@ -6,15 +6,22 @@ This version of the julia course is given for graduate students at Dept. Automat
 Teachers:
 Fredrik Bagge Carlson ([@baggepinnen](https://github.com/baggepinnen))
 
-## Upcoming (Lecture 5)
+## Upcoming (Lecture 6)
+**Hiatus**: The next session will be Tuesday 25/10, please note the two week hiatus.
+
+
+
+## Previously under "upcoming"
+
+### Lecture 5
 Session on Tuesday 4/10 10:15-12:00 [Parallel and distributed computing](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture5_distributed)
 
 *Homework*: Run a distributed workload. If you have no suitable workload of your own, run the particle-filtering distributed.
 Try making use of the cloud computers for this homework.
 
-## Previously under "upcoming"
 
-## Lecture 4
+
+### Lecture 4
 Session on Tuesday 27/9 10:25-12:00 [Workflow, packages and design](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture4_workflow_design)
 - Creating packages
 - Testing
