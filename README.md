@@ -7,7 +7,7 @@ Teachers:
 Fredrik Bagge Carlson ([@baggepinnen](https://github.com/baggepinnen))
 
 ## Upcoming (Lecture 6)
-**Hiatus**: The next session will be Tuesday 25/10, please note the two week hiatus.
+Session on Tuesday 25/10 08:15-10:00, Optimization and Learning.
 
 
 
