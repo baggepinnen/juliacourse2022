@@ -6,12 +6,12 @@ This version of the julia course is given for graduate students at Dept. Automat
 Teachers:
 Fredrik Bagge Carlson ([@baggepinnen](https://github.com/baggepinnen))
 
-## Upcoming (Lecture 6)
-Session on Tuesday 25/10 08:15-10:00, Optimization and Learning.
+## Upcoming: Lecture 6
+Session on Tuesday 25/10 08:15-10:00, [Optimization and Learning](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture6_optimization_learning). Please note the updated time for this session.
 
 
 
-## Previously under "upcoming"
+## Previously under "Upcoming"
 
 ### Lecture 5
 Session on Tuesday 4/10 10:15-12:00 [Parallel and distributed computing](https://github.com/baggepinnen/juliacourse2022/tree/master/lecture5_distributed)
