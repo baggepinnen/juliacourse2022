@@ -23,7 +23,7 @@ Consider an optimization problem (with differentiable cost function) related to 
 
 Benchmark the gradient computation using both forward and reverse mode AD and explain why the relative results are the way they are for your application. If the problem size can be easily scaled up and down, try to find a size where forward and reverse modes perform similarily. If you cannot make either forward or reverse mode work, try to explain why.
 
-*Optimal*: The performance of AD is affected by the same things as standard julia code; use the tricks you've learned from performance optimization to figure out the bottlenecks of your gradient computation.
+*Optional*: The performance of AD is affected by the same things as standard julia code; use the tricks you've learned from performance optimization to figure out the bottlenecks of your gradient computation.
 
 
 ## Previously under "Upcoming"
