@@ -1,4 +1,5 @@
-# Optimization and Learning
+# AD, Optimization and Learning
+Video: [Part 1](https://youtu.be/7kygBYcajQ4), [Part 2 (Flux)](https://youtu.be/w8NP8AfY7bk)
 - Automatic differentiation
   - ForwardDiff.jl
   - ReverseDiff.jl
