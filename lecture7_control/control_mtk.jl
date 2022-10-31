@@ -187,7 +187,7 @@ begin
 	w = exp10.(LinRange(-0.1, 3, 200))
 	bplot = bodeplot(S, w, plotphase=false, legend=:bottomright)
 	scatter!([ωMs], [Ms], lab=Ms)
-	nplot = nyquistplot(Lt, w, ylims=(-3, 0.5), Ms_circles=[Ms], lab="L")
+	nplot = nyquistplot(Lt, w, ylims=(-3, 0.5), xlims=(-2, 0.5), Ms_circles=[Ms], lab="L")
 	plot(p1, bplot, nplot, layout = @layout([a;[b c]]), plot_title = "DC Motor with Speed Controller", title="")
 end
 

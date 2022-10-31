@@ -40,17 +40,17 @@ md"""
 
 # ╔═╡ eb24b9d4-5590-4318-9067-bb3f38493f4e
 begin
-	h       = 0.05
-	A       = [1 h; 0 1]
-	B       = [0;1]
-	C       = [1 0]
-	sys     = ss(A,B,C,0, h)
-	Q       = I(2) |> Matrix
-	L       = lqr(sys,Q,R) # lqr(sys,Q,R) can also be used
+	h      = 0.05
+	A      = [1 h; 0 1]
+	B      = [0;1]
+	C      = [1 0]
+	sys    = ss(A,B,C,0, h)
+	Q      = I(2) |> Matrix
+	L      = lqr(sys,Q,R) # lqr(sys,Q,R) can also be used
 	
-	u(x,t)  = -L*x .+ d_mag*(t>=2.5) # Form control law (u is a function of t and x), a constant input disturbance is affecting the system from t≧2.5
-	t       = 0:h:10
-	x0      = [1,0]
+	u(x,t) = -L*x .+ d_mag*(t>=2.5) # Form control law (u is a function of t and x), a constant input disturbance is affecting the system from t≧2.5
+	t      = 0:h:10
+	x0     = [1,0]
 	y, t, x, uout = lsim(sys,u,t,x0=x0)
 	plot(t,x', lab=["Position" "Velocity"], xlabel="Time [s]", ylims=(-1, 6))
 end
