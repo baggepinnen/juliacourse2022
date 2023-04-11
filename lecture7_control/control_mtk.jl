@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.14
+# v0.19.9
 
 using Markdown
 using InteractiveUtils
@@ -114,7 +114,7 @@ We will use the block [`ModelingToolkitStandardLibrary.Blocks.LimPI`](https://do
 
 # ╔═╡ 533bdee7-4dc2-401a-80d7-72b346f9a5ad
 md"""
-``k = `` $(@bind pi_k Slider(0.1:0.1:2, default=1, show_value = true))
+``k = `` $(@bind pi_k Slider(0.1:0.1:2, default=0.5, show_value = true))
 ``T_i = `` $(@bind pi_T Slider(0.01:0.01:0.1, default=0.05, show_value = true))
 """
 
@@ -239,7 +239,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.2"
 manifest_format = "2.0"
-project_hash = "c5f774ce9ceb2f2808fe621b2989f1bdeb143275"
+project_hash = "420f4e121b272a2f79792e029c04b14066df4d48"
 
 [[deps.AbstractAlgebra]]
 deps = ["GroupsCore", "InteractiveUtils", "LinearAlgebra", "MacroTools", "Markdown", "Random", "RandomExtensions", "SparseArrays", "Test"]
@@ -2105,10 +2105,10 @@ version = "1.4.1+0"
 # ╟─509a4166-5418-41c9-b5fd-04232ff88c04
 # ╠═66e5c3a8-1cd9-4bd1-8900-87f5311bbfb7
 # ╠═19aab8db-a2f7-40b2-a912-9e704fb9fd9f
-# ╟─533bdee7-4dc2-401a-80d7-72b346f9a5ad
 # ╠═0893939e-c10f-40a6-8b46-e2e3ef1aed2f
 # ╟─fe5a0c05-af68-4ec8-913e-585d79745176
 # ╠═6bdd0b33-84b9-4799-b2df-d85e18f85638
+# ╟─533bdee7-4dc2-401a-80d7-72b346f9a5ad
 # ╠═09817d80-9d72-4e79-98b4-7757571118b6
 # ╠═6a3bf8f6-b6a6-433b-9d57-a5a4103e11ab
 # ╟─57f70fbb-981d-45c6-af3f-b5150065d404

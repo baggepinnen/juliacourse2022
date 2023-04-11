@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.14
+# v0.19.9
 
 using Markdown
 using InteractiveUtils
@@ -27,14 +27,14 @@ end;
 H = tf(1,[1,1])
 
 # ╔═╡ e9e9db66-0670-4ba7-96e7-1b12b3f46157
-bodeplot(H)
+bodeplot(H, c=:red)
 
 # ╔═╡ f25756d3-dff6-402a-9e5b-50093d9689d1
 nyquistplot(H^2)
 
 # ╔═╡ fea5734b-ed0e-4f41-907c-f5aebbe5cbdd
 md"""
-``R = `` $(@bind(R, Slider(0.1:0.1:10, default=1, show_value=true)))
+``R = `` $(@bind(R, Slider(0.1:0.1:10, default=1, show_value=true))) ``\quad``
 ``d_{mag} = `` $(@bind(d_mag, Slider(0.1:0.1:5, default=1.5, show_value=true)))
 """
 
@@ -44,7 +44,7 @@ begin
 	A      = [1 h; 0 1]
 	B      = [0;1]
 	C      = [1 0]
-	sys    = ss(A,B,C,0, h)
+	sys    = ss(A, B, C, 0, h)
 	Q      = I(2) |> Matrix
 	L      = lqr(sys,Q,R) # lqr(sys,Q,R) can also be used
 	
@@ -71,9 +71,9 @@ md"""
 
 # ╔═╡ 61abe970-511c-4b96-85d9-903b36f0eb86
 begin
-	k = 1 ± σk
-	ζ = 0.2 ± σζ
-	ω = 0.9 ± σω
+	k = 1 ∓ σk
+	ζ = 0.2 ∓ σζ
+	ω = 0.9 ∓ σω
 	P = tf([k*ω], [1, 2ζ*ω, ω^2])
 end
 
@@ -85,7 +85,7 @@ begin
 end
 
 # ╔═╡ eaf2e2c9-57f8-426b-8363-aa1289298c47
-density(dcgain(P)[], xlabel="DC gain")
+density(dcgain(P)[], xlabel="DC gain", xlims=(0.3, 2), grid=false)
 
 # ╔═╡ aeb58844-d045-443e-95c1-ddc66e1af960
 pextrema(dcgain(P)[])
@@ -124,7 +124,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.2"
 manifest_format = "2.0"
-project_hash = "3bea5a2c4d4267b74cbd9688e93854f5d52d411e"
+project_hash = "4704947c4ea638a95eb69a206689ccbbfefa30bf"
 
 [[deps.AbstractFFTs]]
 deps = ["ChainRulesCore", "LinearAlgebra"]
@@ -1540,16 +1540,16 @@ version = "1.4.1+0"
 # ╠═9da0070f-3448-4bf9-afae-fd186fa0b972
 # ╠═e9e9db66-0670-4ba7-96e7-1b12b3f46157
 # ╠═f25756d3-dff6-402a-9e5b-50093d9689d1
-# ╟─fea5734b-ed0e-4f41-907c-f5aebbe5cbdd
 # ╠═eb24b9d4-5590-4318-9067-bb3f38493f4e
+# ╟─fea5734b-ed0e-4f41-907c-f5aebbe5cbdd
 # ╠═c12fdd22-c08f-493f-88ac-7cb68d13a8f8
 # ╠═61abe970-511c-4b96-85d9-903b36f0eb86
 # ╠═185688fd-9812-4653-a12c-f5446ce9acaa
 # ╠═eaf2e2c9-57f8-426b-8363-aa1289298c47
 # ╠═aeb58844-d045-443e-95c1-ddc66e1af960
 # ╠═3baa0f6e-ac8a-43a7-9abd-c3cff6362169
-# ╠═21dcdcfd-eff2-4285-9b43-e020784ebc38
 # ╟─f8ed1779-c7b0-4947-a327-4f40177f9073
+# ╠═21dcdcfd-eff2-4285-9b43-e020784ebc38
 # ╟─a1cc7d21-d4b5-4483-9e75-3e25582d6770
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
