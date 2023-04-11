@@ -1,6 +1,7 @@
 # Julia for Control
 
-[Slides](https://docs.google.com/presentation/d/1XSY-l4tIMMo1ZvbO9H9_d20Q8VxoDItPPDa0cpbvKrI/edit?usp=sharing)
+- [Slides](https://docs.google.com/presentation/d/1XSY-l4tIMMo1ZvbO9H9_d20Q8VxoDItPPDa0cpbvKrI/edit?usp=sharing)
+- [Video (first half only)](https://youtu.be/Effifd9Th9I)
 
 This weeks material is a mix of
 - ControlSystems and ModelingToolkit
