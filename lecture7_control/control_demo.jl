@@ -34,13 +34,13 @@ Learn more by watching the Youtube video series [Introduction to Control Analysi
 md"Create a transfer funciton"
 
 # ╔═╡ 9da0070f-3448-4bf9-afae-fd186fa0b972
-H = tf(1,[1,1])
+H = tf(1, [1, 1])
 
 # ╔═╡ 4162cc7d-9b06-48e8-8447-7b35865438d1
 md"Plot the Bode curve"
 
 # ╔═╡ e9e9db66-0670-4ba7-96e7-1b12b3f46157
-bodeplot(H, c=:red)
+bodeplot(H)
 
 # ╔═╡ 2f1971f4-1533-4b85-b1d1-5d0c501eb1e5
 md"Plot a Nyquist plot"
@@ -53,7 +53,7 @@ md"Design and simulate an LQR controller"
 
 # ╔═╡ fea5734b-ed0e-4f41-907c-f5aebbe5cbdd
 md"""
-``R = `` $(@bind(R, Slider(0.1:0.1:10, default=1, show_value=true))) ``\quad``
+``R = `` $(@bind(R, Slider(0.1:0.1:10, default=1, show_value=true)))
 ``d_{mag} = `` $(@bind(d_mag, Slider(0.1:0.1:5, default=1.5, show_value=true)))
 """
 
@@ -127,7 +127,7 @@ pextrema(dcgain(P)[])
 # ╔═╡ 3baa0f6e-ac8a-43a7-9abd-c3cff6362169
 begin
 	w = exp10.(LinRange(-2,1,200))
-	mag, phase = bode(P, w) .|> vec
+	mag, phase = bodev(P, w)
 	errorbarplot(w, mag, yscale=:log10, xscale=:log10)
 end
 

@@ -61,7 +61,7 @@ graph LR
 
 # ╔═╡ 3bd727b4-2d29-48e5-bae9-0694004f572f
 md"""
-We will assemble the following system
+We will assemble the following system (GUI is work in progress)
 ```
                                  +-----+     +-----+
                             r    |     |  u  |     | y
@@ -117,7 +117,7 @@ We will use the block [`ModelingToolkitStandardLibrary.Blocks.LimPI`](https://do
 
 # ╔═╡ 533bdee7-4dc2-401a-80d7-72b346f9a5ad
 md"""
-``k = `` $(@bind pi_k Slider(0.1:0.1:2, default=0.5, show_value = true))
+``k = `` $(@bind pi_k Slider(0.1:0.1:2, default=1, show_value = true))
 ``T_i = `` $(@bind pi_T Slider(0.01:0.01:0.1, default=0.05, show_value = true))
 """
 
