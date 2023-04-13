@@ -7,6 +7,11 @@ This weeks material is a mix of
 - ControlSystems and ModelingToolkit
 - How to control physical hardware
 
+## Hosted notebooks
+See the notebooks rendered here
+- [`control_demo.jl`](https://juliahub.com/pluto/editor.html?id=375e4201-8b44-4636-98b6-4f8e4af4c450)
+- [`control_mtk`](https://juliahub.com/pluto/editor.html?id=ac5abd85-4cb4-42bd-9e8f-b04b6eef3f52)
+
 
 ## Homework
 
