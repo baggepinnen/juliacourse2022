@@ -1,4 +1,4 @@
-# Functions in Julia: A quick intoduction
+# Functions in Julia: A quick introduction
 ### For more details: https://docs.julialang.org/en/v1/manual/functions/
 ##### A function can be defined in two standard ways
 

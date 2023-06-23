@@ -25,10 +25,10 @@ Study the five notebook lectures in
 Pay particular attention to the fundamental differences between forward and reverse mode AD. You will not be questioned on the contents and do not have to study it in great detail, but you should be comfortable enough with the basics to be able to explain your results in the task below.
 
 #### Part 2, doing:
-Consider an optimization problem (with differentiable cost function) related to your research, it may be anything, big or small (preferably complicated enough to make manual derivation of the gradient an ardeous task). Code this up in Julia and compute the gradient (and Hessian or some Jacobian if you find it relevant) of the loss function using *both* forward and reverse mode AD. You may use any AD packages of your choice, the simplest ones to get started with are
+Consider an optimization problem (with differentiable cost function) related to your research, it may be anything, big or small (preferably complicated enough to make manual derivation of the gradient an arduous task). Code this up in Julia and compute the gradient (and Hessian or some Jacobian if you find it relevant) of the loss function using *both* forward and reverse mode AD. You may use any AD packages of your choice, the simplest ones to get started with are
 - [ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl/) for forward mode.
 - [ReverseDiff.jl](https://github.com/JuliaDiff/ReverseDiff.jl) or [Zygote.jl](https://github.com/FluxML/Zygote.jl) for reverse mode.
 
-Benchmark the gradient computation using both forward and reverse mode AD and explain why the relative results are the way they are for your application. If the problem size can be easily scaled up and down, try to find a size where forward and reverse modes perform similarily. If you cannot make either forward or reverse mode work, try to explain why.
+Benchmark the gradient computation using both forward and reverse mode AD and explain why the relative results are the way they are for your application. If the problem size can be easily scaled up and down, try to find a size where forward and reverse modes perform similarly. If you cannot make either forward or reverse mode work, try to explain why.
 
 *Optional*: The performance of AD is affected by the same things as standard julia code; use the tricks you've learned from performance optimization to figure out the bottlenecks of your gradient computation.
