@@ -31,7 +31,7 @@ Learn more by watching the Youtube video series [Introduction to Control Analysi
 """
 
 # ╔═╡ e82b5df1-23bf-4810-a4f6-a07fc29c066a
-md"Create a transfer funciton"
+md"Create a transfer function"
 
 # ╔═╡ 9da0070f-3448-4bf9-afae-fd186fa0b972
 H = tf(1, [1, 1])
@@ -78,7 +78,7 @@ end
 md"Analyze the properties of a system with parametric uncertainty"
 
 # ╔═╡ fe2f2114-7cdb-456e-94f4-a95450d50410
-md"Look at the probability-densitfy functions of the uncertain parameters"
+md"Look at the probability-density functions of the uncertain parameters"
 
 # ╔═╡ 0114cf9c-f918-473d-94ea-66edfd9d41df
 md"Compute and visualize the distribution of uncertainty in the DC-gain of the uncertain system"
