@@ -1,4 +1,4 @@
-# Examample for multiple dispatch
+# Example for multiple dispatch
 # Idea (and code) borrowed from talk by Stefan Karpinski, see https://youtu.be/S6Wx_J4Mk7U
 using LinearAlgebra
 using BenchmarkTools
@@ -58,7 +58,7 @@ dump(vs[1])
 @btime innersum($A, $vs)
 
 
-# Lets try to be more efficent!
+# Lets try to be more efficient
 *(A::AbstractMatrix, v::OneHotVector) where T = A[:, v.ind]
 # This now works
 randn(3,3)*vs[1]
