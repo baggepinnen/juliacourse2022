@@ -34,7 +34,7 @@
 # Define constructor that works as:
 # TrackingFloat(1.0), generating TrackingFloat(1.0, 0.0)
 
-# Define simple getters `value` and `getmax` that gets the corresponding fileds.
+# Define simple getters `value` and `getmax` that gets the corresponding fields.
 
 # Note:
 # Don't forget to `import Base: +, *, -, /`
